@@ -1,0 +1,52 @@
+.projectsContainer {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 9vh;
+}
+.projectRow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10vh;
+}
+.projectImg {
+  width: 60%;
+  height: 400px;
+  margin: 0.8em 1.5em 0.6em 1em;
+}
+.projectDate,
+.projectTech {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+.projectDescription {
+  display: inline-block;
+  max-width: 500px;
+  margin: 0.8em 1em;
+  color: black;
+  font-size: 0.9em;
+}
+.projectAbout {
+  padding: 4px 0px 4px 0px;
+}
+
+/*** RESPONSIVE SIZING ***/
+@media screen and (max-width: 800px) {
+  .projectsContainer {
+    justify-content: center;
+    align-items: center;
+  }
+  .projectRow {
+    flex-direction: column;
+    margin-bottom: 5vh;
+  }
+  .projectImg {
+    width: 100%;
+    margin: auto;
+  }
+  .projectDescription {
+    display: inline-block;
+    width: 100%;
+  }
+}
